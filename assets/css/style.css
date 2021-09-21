@@ -222,9 +222,8 @@ header .active a {
 }
 
 .section-aboutus--rigth {
-  width:520px;
+  width: 520px;
   text-align: center;
-  
 }
 
 .section-aboutus--rigth img {
@@ -262,3 +261,45 @@ header .active a {
   font-size: 13px;
   color: var(--font2);
 }
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-projects--filters {
+  display: inline-block;
+  padding: 0 20px;
+  border: 1px solid #cfcfcf;
+  background-color: #ededed;
+  border-radius: 30px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+  list-style: none;
+}
+
+.section-projects--filters li {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-left: 1px solid #cfcfcf;
+  font-weight: 300;
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+}
+
+.section-projects--filters li:hover,
+.section-projects--filters .active {
+  border-bottom: 5px solid var(--base);
+}
+
+.section-projects--filters li:first-child {
+  border-left: 0;
+  margin-left: 0;
+}
+
