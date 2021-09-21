@@ -206,6 +206,7 @@ header .active a {
 }
 
 /* Áreas específicas */
+/* Primeira section */ 
 .section-aboutus {
   display: flex;
 }
@@ -231,6 +232,8 @@ header .active a {
   box-shadow: 0 5px 10px #333;
 }
 
+
+/* Segunda section */ 
 .section-services {
   display: flex;
 }
@@ -262,6 +265,8 @@ header .active a {
   color: var(--font2);
 }
 
+
+/* Terceira section primeira parte*/
 .section-projects {
   display: flex;
   flex-direction: column;
@@ -274,6 +279,7 @@ header .active a {
   border: 1px solid #cfcfcf;
   background-color: #ededed;
   border-radius: 30px;
+  margin-bottom: 40px;
 }
 
 .section-projects--filters ul,
@@ -300,6 +306,51 @@ header .active a {
 
 .section-projects--filters li:first-child {
   border-left: 0;
-  margin-left: 0;
 }
 
+/* Terceira section segunda parte*/
+.section-projects--photos {
+  width: 100vw;
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-projects--photo {
+  width: 280px;
+}
+
+.section-projects--photoarea {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photoarea img {
+  width: inherit;
+  height: inherit;
+}
+
+.section-projects--photoinfo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-text);
+}
+
+.section-projects--photoinfo h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo {
+  display: flex;
+}
