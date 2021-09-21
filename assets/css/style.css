@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 :root {
-  --color-base: #b28756;
-  --color-font: white;
+  --base: #b78b5a;
+  --font: white;
+  --font2: #adadad;
+  --ligth: #f7f7f7;
+  --ligth-text: black;
+  --dark: black;
+  --dark-text: white;
 }
 
 * {
@@ -12,12 +17,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body {
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+.header {
   max-width: 1140px;
+  height: 100px;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 /* Header */
@@ -27,15 +37,11 @@ header {
   color: white;
 }
 
-header .container {
-  height: 100px;
-}
-
 header .logoimg {
   width: 80px;
   height: 80px;
   margin: 0 10px;
-  background-color: var(--color-base);
+  background-color: var(--base);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +50,12 @@ header .logoimg {
 
 header .logoimg span {
   transform: rotate(-45deg);
+}
+
+header .menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 header ul {
@@ -57,8 +69,7 @@ header li a {
   height: 100px;
   padding: 0 11px;
   border-bottom: 5px solid transparent;
-  font-size: 14px;
-  color: var(--color-font);
+  color: var(--font);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -66,34 +77,46 @@ header li a {
 
 header li a:hover,
 header .active a {
-  border-bottom: 5px solid var(--color-base);
+  border-bottom: 5px solid var(--base);
   color: #cccccc;
 }
 
 /* Main */
-main .banner {
+/* Área do banner */
+.button {
+  display: inline-block;
+  background-color: var(--base);
+  color: var(--font);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.banner {
   height: calc(100vh - 100px);
   background-image: url('../images/bg.jpg');
   background-size: cover;
   background-position: bottom;
-  overflow: hidden;
   text-transform: uppercase;
 }
 
-main .banner .sliders {
+.banner .sliders {
   width: 1000vw;
   height: 100%;
 }
 
-main .banner .slide {
+.banner .slide {
   width: 100vw;
   height: 100%;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-main .banner .slideArea {
-  color: var(--color-font);
+.banner .slideArea {
+  color: var(--font);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,28 +124,17 @@ main .banner .slideArea {
   height: 100%;
 }
 
-main .banner h1 {
+.banner h1 {
   font-size: 50px;
   font-weight: bold;
 }
 
-main .banner h1 span {
+.banner h1 span {
   color: #b28756;
 }
 
-main .banner h2 {
-  margin: 30px 0 50px 0;
-}
-
-main .banner a {
-  display: block;
-  background-color: var(--color-base);
-  color: var(--color-font);
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 10px 30px;
-  border-radius: 30px;
+.banner h2 {
+  margin: 30px 0 20px 0;
 }
 
 .banner .sliders-pointers {
@@ -138,12 +150,84 @@ main .banner a {
 .banner .pointer {
   width: 15px;
   height: 15px;
-  border: 2px solid var(--color-base);
+  border: 2px solid var(--base);
   border-radius: 50%;
   margin: 5px;
   cursor: pointer;
 }
 
 .banner .active {
-  background-color: var(--color-base);
+  background-color: var(--base);
+}
+
+/* Área default */
+.default {
+  padding: 50px 0;
+}
+
+.default .section-title,
+.default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title {
+  font-size: 20px;
+}
+
+.default .section-desc {
+  margin: 10px 0 40px 0;
+  font-size: 12px;
+  color: var(--font2);
+}
+
+.default .section-body {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.default.ligth {
+  background-color: var(--ligth);
+}
+
+.default.ligth .section-title,
+.default.ligth .section-body {
+  color: var(--ligth-text);
+}
+
+.default.dark {
+  background-color: var(--dark);
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+  color: var(--dark-text);
+}
+
+/* Áreas específicas */
+.section-aboutus {
+  display: flex;
+}
+
+.section-aboutus--left {
+  flex: 1;
+}
+
+.section-aboutus--left p {
+  margin-right: 15px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section-aboutus--rigth {
+  width:520px;
+  text-align: center;
+  
+}
+
+.section-aboutus--rigth img {
+  width: 480px;
+  box-shadow: 0 5px 10px #333;
 }
