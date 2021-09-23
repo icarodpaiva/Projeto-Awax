@@ -93,6 +93,7 @@ header .active a {
   padding: 10px 30px;
   border-radius: 30px;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 .banner {
@@ -576,10 +577,85 @@ header .active a {
   cursor: pointer;
 }
 
-.prices-plans .button:hover, .prices-plans .active {
+.prices-plans .button:hover,
+.prices-plans .active {
   background-color: var(--base);
 }
 
 .border-bottom {
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+/* Section de pacotes */
+.ligth.bg-white {
+  background-color: white;
+}
+
+.section-plans {
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+}
+
+.section-plans > img {
+  width: 380px;
+  margin: 0 40px 40px 40px;
+}
+
+.section-plans-desc {
+  max-width: 500px;
+}
+
+.section-plans-desc-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.section-plans-desc-container .img {
+  margin-right: 30px;
+}
+
+.section-plans-desc-container--text h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.section-plans-desc-container--text p {
+  line-height: 25px;
+  font-weight: 300;
+  color: #838383;
+}
+
+.section-plans-desc-container--text span {
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.section-body > .sliders-pointers {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section-body .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--base);
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.section-body .active {
+  background-color: var(--base);
+}
+
+.section-body > .container-button {
+  display: flex;
+  justify-content: center;
 }
