@@ -699,3 +699,47 @@ header .active a {
   font-size: 13px;
   color: var(--font2);
 }
+
+/* Tell about us */
+.tellabout {
+  max-width: 1140px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+
+.tellabout div {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 30px;
+}
+
+.tellabout div:nth-child(2) {
+  background-color: #33c4f0;
+}
+
+.tellabout div:nth-child(3) {
+  background-color: #0f7cb4;
+}
+
+.tellabout div:nth-child(4) {
+  background-color: #336296;
+}
+
+.tellabout div:nth-child(5) {
+  background-color: #e84138;
+}
+
+.tellabout div:nth-child(6) {
+  background-color: #b81c29;
+}
