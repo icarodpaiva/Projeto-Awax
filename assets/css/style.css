@@ -742,3 +742,57 @@ header .active a {
 .tellabout div:nth-child(6) {
   background-color: #b81c29;
 }
+
+/* Contact US */
+.section-contactus {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+.section-contactus form {
+  max-width: 500px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.section-contactus label {
+  display: inline-block;
+  border-bottom: 1px solid #aeaeae;
+  margin: 15px;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.section-contactus input {
+  margin-left: 5px;
+  outline: 0;
+  border: 0;
+  background-color: var(--ligth);
+}
+
+.section-contactus label:nth-last-child(3),
+.section-contactus label:nth-last-child(2) {
+  width: calc(100% - 30px);
+}
+
+.section-contactus input:nth-last-child(3),
+.section-contactus input:nth-last-child(2) {
+  width: 70%;
+}
+
+.section-contactus .button {
+  display: inline-block;
+  background-color: var(--base);
+  color: var(--font);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
