@@ -174,6 +174,7 @@ header .active a {
 
 .default .section-title {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .default .section-desc {
@@ -315,7 +316,7 @@ header .active a {
   justify-content: center;
 }
 
-.section-projects--photo {  
+.section-projects--photo {
   width: 280px;
 }
 
@@ -456,4 +457,129 @@ header .active a {
 
 .section-team--social a:hover {
   background-color: var(--base);
+}
+
+/* Section de depoimentos */
+.section-happyclients {
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-happyclients--name {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section-happyclients--role {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.section-happyclients--text {
+  margin-top: 20px;
+  color: #7e7e7e;
+}
+
+.section-happyclients .sliders-pointers {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section-happyclients .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--base);
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.section-happyclients .active {
+  background-color: var(--base);
+}
+
+/* Área de patrocinadores */
+.sponsors {
+  margin-bottom: 2px;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  box-shadow: 0 2px 2px #cfcfcf;
+}
+
+.sponsors-container {
+  height: 148px;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors a {
+  margin: 45px;
+}
+
+/* Área destinada a section prices */
+.prices {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.prices-plans {
+  width: 255px;
+  margin: 0 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.prices-plans--title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.prices-plans--price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.prices-plans--duration {
+  font-size: 9px;
+  color: #aeaeae;
+  text-transform: uppercase;
+}
+
+.prices-plans--included {
+  margin-top: 20px;
+  color: #7e7e7e;
+  font-size: 11px;
+}
+
+.prices-plans .button {
+  margin-bottom: 35px;
+  background-color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.prices-plans .button:hover, .prices-plans .active {
+  background-color: var(--base);
+}
+
+.border-bottom {
+  border-bottom: 1px solid #cfcfcf;
 }
