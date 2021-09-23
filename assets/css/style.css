@@ -652,7 +652,7 @@ header .active a {
   cursor: pointer;
 }
 
-.section-body .active {
+.sliders-pointers > .active {
   background-color: var(--base);
 }
 
@@ -701,7 +701,7 @@ header .active a {
 }
 
 /* Tell about us */
-.tellabout {
+.tellabout-container {
   max-width: 1140px;
   height: 75px;
   display: flex;
@@ -712,7 +712,6 @@ header .active a {
   color: #aeaeae;
   font-weight: 600;
 }
-
 
 .tellabout div {
   height: 33px;
