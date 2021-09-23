@@ -206,7 +206,7 @@ header .active a {
 }
 
 /* Áreas específicas */
-/* Primeira section */ 
+/* Primeira section */
 .section-aboutus {
   display: flex;
 }
@@ -232,8 +232,7 @@ header .active a {
   box-shadow: 0 5px 10px #333;
 }
 
-
-/* Segunda section */ 
+/* Segunda section */
 .section-services {
   display: flex;
 }
@@ -264,7 +263,6 @@ header .active a {
   font-size: 13px;
   color: var(--font2);
 }
-
 
 /* Terceira section primeira parte*/
 .section-projects {
@@ -317,7 +315,7 @@ header .active a {
   justify-content: center;
 }
 
-.section-projects--photo {
+.section-projects--photo {  
   width: 280px;
 }
 
@@ -353,4 +351,109 @@ header .active a {
 
 .section-projects--photoarea:hover .section-projects--photoinfo {
   display: flex;
+}
+
+/* Quarta section - team */
+.bg-team {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-team {
+  overflow: hidden;
+  max-width: 880px;
+  margin: auto;
+}
+
+.section-team-area {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px 0;
+}
+
+.section-team .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.section-team .slide {
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  display: inline-block;
+  background-color: var(--font);
+  margin-right: 20px;
+}
+
+.section-team .slideArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--dark);
+  padding: 30px;
+}
+
+.section-team-area .sliders-pointers {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section-team-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--base);
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.section-team-area .active {
+  background-color: var(--base);
+}
+
+.section-team--avatar {
+  width: 150px;
+}
+
+.section-team--name {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.section-team--role {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.section-team--social {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section-team--social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #bebebe;
+}
+
+.section-team--social a:last-child {
+  margin-right: 0;
+}
+
+.section-team--social a:hover {
+  background-color: var(--base);
 }
