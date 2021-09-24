@@ -975,7 +975,7 @@ footer {
   margin-bottom: -0.25rem;
 }
 
-/* Área de responsividade */
+/* Área de responsividade para tablets */
 @media (max-width: 980px) {
   * {
     overflow-x: hidden;
@@ -1040,6 +1040,172 @@ footer {
 
   .section-team {
     max-width: 580px;
+  }
+
+  .section-happyclients {
+    max-width: 450px;
+  }
+
+  .sponsors a {
+    margin: 15px;
+  }
+
+  .section-facts {
+    flex-wrap: wrap;
+  }
+
+  .section-fact {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-fact h4,
+  .section-fact p {
+    max-width: 60%;
+  }
+
+  .section-map {
+    padding: 30px;
+  }
+
+  .section-map--area {
+    width: auto;
+  }
+
+  .section-map--info {
+    width: auto;
+  }
+
+  .section-map--info-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-area > div {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .footer-area > div:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .footer-area--subscribe {
+    order: 0;
+    border-radius: 10px;
+  }
+
+  .footer-area--subscribe form {
+    padding: 30px;
+  }
+
+  .footer-area--contacts {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-area--contacts-reference {
+    display: none;
+  }
+
+  .footer-area--text {
+    order: 2;
+    max-width: 450px;
+  }
+
+  .footer-area--text::after {
+    content: 'AWAX \00A9  20';
+    margin-top: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+/* Área de responsividade para celulares */
+@media (max-width: 600px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: none;
+    width: 100vw;
+  }
+
+  .menu li a {
+    height: 50px;
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  .menu .active a {
+    color: var(--base);
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner h2 {
+    font-size: 17px;
+  }
+
+  .section-aboutus--rigth {
+    width: auto;
+    margin: 0 30px;
+  }
+
+  .section-aboutus--rigth img {
+    width: 100%;
+  }
+
+  .section-service {
+    min-width: 100%;
+  }
+
+  .section-projects--filters {
+    margin: 0 30px;
+  }
+
+  .section-projects--filters ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-projects--filters ul li {
+    min-width: 100%;
+    text-align: center;
+    border: 0;
+  }
+
+  .filters li:hover,
+  .section-projects--filters .active {
+    border: 0;
+    color: var(--base);
+  }
+
+  .section-projects--photo {
+    width: 320px;
+  }
+
+  .section-projects--photoarea {
+    width: 300px;
+    height: auto;    
+  }
+
+  .section-team {
+    max-width: 280px;
   }
 
   .section-happyclients {
