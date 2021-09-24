@@ -19,6 +19,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-size: 13px;
 }
 
@@ -599,6 +600,8 @@ header .active a {
   border-bottom: 1px solid #d8d8d8;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-plans > img {
@@ -616,7 +619,8 @@ header .active a {
 }
 
 .section-plans-desc-container .img {
-  margin-right: 30px;
+  width: 50px;
+  margin-right: 0;
 }
 
 .section-plans-desc-container--text h4 {
@@ -625,6 +629,10 @@ header .active a {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+}
+
+.section-plans-desc-container--text.margin-left {
+  margin-left: 23px;
 }
 
 .section-plans-desc-container--text p {
@@ -1018,7 +1026,7 @@ footer {
   }
 
   .section-happyclients {
-    max-width: 500px;
+    max-width: 450px;
   }
 
   .sponsors a {
@@ -1030,20 +1038,6 @@ footer {
 
   .sponsors a img {
     width: 100%;
-  }
-
-  .section-plans {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section-plans .img {
-    width: 50px;
-    margin-right: 0;
-  }
-
-  .section-plans-desc-container--text.margin-left {
-    margin-left: 23px;
   }
 
   .section-facts {
@@ -1058,7 +1052,69 @@ footer {
     justify-content: center;
   }
 
-  .section-fact h4, .section-fact p {
+  .section-fact h4,
+  .section-fact p {
     max-width: 60%;
+  }
+
+  .section-map {
+    padding: 30px;
+  }
+
+  .section-map--area {
+    width: auto;
+  }
+
+  .section-map--info {
+    width: auto;
+  }
+
+  .section-map--info-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-area > div {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .footer-area > div:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .footer-area--subscribe {
+    order: 0;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .footer-area--contacts {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-area--contacts-reference {
+    display: none;
+  }
+
+  .footer-area--text {
+    order: 2;
+    max-width: 450px;
+  }
+
+  .footer-area--text::after {
+    content: 'AWAX \00A9  20';
+    margin-top: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: bold;
   }
 }
