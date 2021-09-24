@@ -220,13 +220,18 @@ header .active a {
 
 .section-aboutus--left {
   flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-aboutus--left p {
   margin-right: 15px;
   text-align: justify;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 25px;  
 }
 
 .section-aboutus--rigth {
