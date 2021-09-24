@@ -19,7 +19,6 @@
 }
 
 body {
-  
   font-size: 13px;
 }
 
@@ -231,7 +230,7 @@ header .active a {
   margin-right: 15px;
   text-align: justify;
   font-size: 14px;
-  line-height: 25px;  
+  line-height: 25px;
 }
 
 .section-aboutus--rigth {
@@ -341,7 +340,6 @@ header .active a {
 .section-projects--photoarea img {
   width: inherit;
   height: inherit;
- 
 }
 
 .section-projects--photoinfo {
@@ -539,6 +537,13 @@ header .active a {
 
 .sponsors a {
   margin: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors a img {
+  width: 100%;
 }
 
 /* Área destinada a section prices */
@@ -1041,14 +1046,7 @@ footer {
   }
 
   .sponsors a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     margin: 15px;
-  }
-
-  .sponsors a img {
-    width: 100%;
   }
 
   .section-facts {
