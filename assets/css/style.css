@@ -886,10 +886,11 @@ footer {
 .footer-area > div {
   flex: 1;
   margin-right: 30px;
+  padding: 0 15px;
 }
 
 .footer-area > div:last-child {
-  margin-right: 0;
+  margin-right: 20px;
 }
 
 .footer-area--contacts {
@@ -1098,8 +1099,11 @@ footer {
 
   .footer-area--subscribe {
     order: 0;
-    padding: 30px;
     border-radius: 10px;
+  }
+
+  .footer-area--subscribe form {
+    padding: 30px;
   }
 
   .footer-area--contacts {
