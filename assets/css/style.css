@@ -98,6 +98,7 @@ header .active a {
   border-radius: 30px;
   margin-top: 30px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .banner {
@@ -638,16 +639,16 @@ header .active a {
   margin-right: 0;
 }
 
+.section-plans-desc-container--text {
+  flex: 1;
+}
+
 .section-plans-desc-container--text h4 {
   margin: 10px 0;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
-}
-
-.section-plans-desc-container--text.margin-left {
-  margin-left: 23px;
 }
 
 .section-plans-desc-container--text p {
@@ -981,6 +982,12 @@ footer {
     overflow-x: hidden;
   }
 
+  header li a:hover,
+  header .active a {
+    border: 0;
+    color: var(--base);
+  }
+
   .logo {
     margin-left: 15px;
   }
@@ -1139,7 +1146,6 @@ footer {
   }
 
   nav {
-    display: none;
     width: 100vw;
   }
 
@@ -1201,7 +1207,7 @@ footer {
 
   .section-projects--photoarea {
     width: 300px;
-    height: auto;    
+    height: auto;
   }
 
   .section-team {
@@ -1209,28 +1215,25 @@ footer {
   }
 
   .section-happyclients {
-    max-width: 450px;
+    margin: 0 30px;
+  }
+
+  .sponsors-container {
+    flex-wrap: wrap;
+    height: auto;
   }
 
   .sponsors a {
     margin: 15px;
+    width: 75px;
   }
 
-  .section-facts {
-    flex-wrap: wrap;
+  .section-plans-desc {
+    margin: 0 20px;
   }
 
   .section-fact {
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .section-fact h4,
-  .section-fact p {
-    max-width: 60%;
+    min-width: 100%;
   }
 
   .section-map {
