@@ -15,11 +15,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 13px;
-  overflow-x: hidden;
 }
 
 .header {
@@ -111,7 +111,7 @@ header .active a {
 
 .banner .slide {
   width: 100vw;
-  height: 100%;
+  height: calc(100% - 3px);
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.8);
 }
