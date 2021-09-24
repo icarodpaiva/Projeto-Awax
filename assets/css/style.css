@@ -19,7 +19,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  
   font-size: 13px;
 }
 
@@ -330,11 +330,13 @@ header .active a {
   margin: 10px;
   width: 260px;
   height: 160px;
+  overflow: hidden;
 }
 
 .section-projects--photoarea img {
   width: inherit;
   height: inherit;
+ 
 }
 
 .section-projects--photoinfo {
@@ -409,6 +411,7 @@ header .active a {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 .section-team-area .pointer {
@@ -495,6 +498,7 @@ header .active a {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 .section-happyclients .pointer {
@@ -525,6 +529,7 @@ header .active a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .sponsors a {
@@ -653,6 +658,7 @@ header .active a {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 .section-body .pointer {
