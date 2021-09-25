@@ -1244,7 +1244,17 @@ footer {
     min-width: 100%;
   }
 
-  /* Paramos aqui */
+  .section-contactus label {
+    width: calc(100% - 30px);
+  }
+
+  .section-contactus input {
+    width: 70%;
+  }
+
+  .section-contactus input:last-child {
+    width: auto;
+  }
 
   .section-map {
     padding: 30px;
