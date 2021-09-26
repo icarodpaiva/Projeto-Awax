@@ -1257,11 +1257,8 @@ footer {
   }
 
   .section-map {
-    padding: 30px;
-  }
-
-  .section-map--area {
-    width: auto;
+    padding: 0;
+    padding-bottom: 250px;
   }
 
   .section-map--info {
@@ -1270,53 +1267,5 @@ footer {
 
   .section-map--info-item:last-child {
     margin-bottom: 0;
-  }
-
-  .footer-area {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-area > div {
-    margin-bottom: 30px;
-    margin-right: 0;
-  }
-
-  .footer-area > div:nth-child(2) {
-    margin-bottom: 0;
-  }
-
-  .footer-area--subscribe {
-    order: 0;
-    border-radius: 10px;
-  }
-
-  .footer-area--subscribe form {
-    padding: 30px;
-  }
-
-  .footer-area--contacts {
-    order: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-area--contacts-reference {
-    display: none;
-  }
-
-  .footer-area--text {
-    order: 2;
-    max-width: 450px;
-  }
-
-  .footer-area--text::after {
-    content: 'AWAX \00A9  20';
-    margin-top: 20px;
-    display: block;
-    color: white;
-    text-align: center;
-    font-weight: bold;
   }
 }
